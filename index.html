@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Fruit Shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fruit Shop</h1>
+    </header>
+    <main>
+        <section class="have-rupee">
+            <p>I have Rs.</p>
+            <input type="number" min="5">
+        </section>
+        <section class="total-rupee">
+            <p>Your total is Rs.</p>
+            <input type="text" value="27">
+        </section>
+        <section class="fruits">
+            <div class="apple-box">
+                <figure>
+                    <div class="heading">
+                        <p>Rs. <span>10</span></p>
+                    </div>
+                    <img height="100" src="images\apple.png" alt="apple">
+                    <figcaption>Apple</figcaption>
+                    <div class="buy-fruit">
+                        <button class="less">-</button>
+                        <input type="number" min="0" value="0" id="Apples">
+                        <button class="more" onclick="addApples ()">+</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="orange-box">
+                <figure>
+                    <div class="heading">
+                        <p>Rs. <span>15</span></p>
+                    </div>
+                    <img height="100" src="images\orange.png" alt="orange">
+                    <figcaption>Orange</figcaption>
+                    <div class="buy-fruit">
+                        <button class="less">-</button>
+                        <input type="number" min="0" value="0" id="Oranges">
+                        <button class="more" onclick="addOranges ()">+</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="banana-box">
+                <figure>
+                    <div class="heading">
+                        <p>Rs. <span>7</span></p>
+                    </div>
+                    <img height="100" src="images\banana.png" alt="banana">
+                    <figcaption>Banana</figcaption>
+                    <div class="buy-fruit">
+                        <button class="less">-</button>
+                        <input type="number" min="0" value="0" id="Bananas">
+                        <button class="more" onclick="addBananas ()">+</button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
