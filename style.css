@@ -39,19 +39,14 @@ header {
     background-color: #efe2cc;
 }
 
-.total-rupee input {
-    background-color: #efe2cc;
-    border: none;
-    border-radius: 30px;
-    width: 2em;
-    height: 2em;
+.total-rupee span {
     font-size: 3em;
     font-weight: bold;
     text-align: center;
     color: #ed462f;
 }
 
-.total-rupee p {
+.total-rupee strong {
     font-size: 26px;
 }
 
@@ -106,7 +101,7 @@ header {
     border: none;
     color: white;
     font-size: 1em;
-    padding: 11px;
+    padding: 9px;
     background-color: #494f58;
 }
 
@@ -129,7 +124,7 @@ figcaption {
 .buy-fruit input {
     text-align: center;
     border: none;
-    width: 99px;
+    width: 68px;
     height: 28px;
     background-image: linear-gradient(#cac8c8, white);
 }

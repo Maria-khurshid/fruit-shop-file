@@ -16,11 +16,14 @@
     <main>
         <section class="have-rupee">
             <p>I have Rs.</p>
-            <input type="number" min="5">
+            <input type="number" min="5" id="myMoney">
         </section>
         <section class="total-rupee">
-            <p>Your total is Rs.</p>
-            <input type="text" value="27">
+            <strong>Your total is Rs.
+                <span id="total-input">
+                    0
+                </span>
+            </strong>
         </section>
         <section class="fruits">
             <div class="apple-box">
@@ -31,9 +34,9 @@
                     <img height="100" src="images\apple.png" alt="apple">
                     <figcaption>Apple</figcaption>
                     <div class="buy-fruit">
-                        <button class="less">-</button>
-                        <input type="number" min="0" value="0" id="Apples">
-                        <button class="more" onclick="addApples ()">+</button>
+                        <button class="less" onclick="removeApple ()">-</button>
+                        <input type="number" min="0" value="0" id="ApplesNumb">
+                        <button class=" more" onclick="addApples ()">+</button>
                     </div>
                 </figure>
             </div>
@@ -45,8 +48,8 @@
                     <img height="100" src="images\orange.png" alt="orange">
                     <figcaption>Orange</figcaption>
                     <div class="buy-fruit">
-                        <button class="less">-</button>
-                        <input type="number" min="0" value="0" id="Oranges">
+                        <button class="less" onclick="removeOrange ()">-</button>
+                        <input type="number" min="0" value="0" id="OrangesNumb">
                         <button class="more" onclick="addOranges ()">+</button>
                     </div>
                 </figure>
@@ -59,8 +62,8 @@
                     <img height="100" src="images\banana.png" alt="banana">
                     <figcaption>Banana</figcaption>
                     <div class="buy-fruit">
-                        <button class="less">-</button>
-                        <input type="number" min="0" value="0" id="Bananas">
+                        <button class="less" onclick="removeBanana ()">-</button>
+                        <input type="number" min="0" value="0" id="BananasNumb">
                         <button class="more" onclick="addBananas ()">+</button>
                     </div>
                 </figure>
