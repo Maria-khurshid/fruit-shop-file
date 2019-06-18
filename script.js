@@ -31,6 +31,7 @@ function addOranges() {
     totalPrice = chooseApple * 10 + chooseOrange * 15 - chooseBanana * 7;
     chooseOrange++;
     document.querySelector('#total-input').innerHTML = + totalPrice;
+    document.querySelector("#haveMoney").innerHTML = -myMoney;
 }
 
 
@@ -40,6 +41,7 @@ function addBananas() {
     totalPrice = chooseApple * 10 + chooseOrange * 15 - chooseBanana * 7;
     chooseBanana++;
     document.querySelector('#total-input').innerHTML = + totalPrice;
+    document.querySelector("#haveMoney").innerHTML = -myMoney;
 }
 
 // function of subtraction
@@ -50,6 +52,7 @@ function removeApple() {
     totalPrice = chooseApple * 10 + chooseOrange * 15 + chooseBanana * 7;
     chooseApple--;
     document.querySelector('#total-input').innerHTML = + totalPrice;
+    document.querySelector("#haveMoney").innerHTML = -myMoney;
 }
 
 function removeOrange() {
@@ -58,6 +61,7 @@ function removeOrange() {
     totalPrice = chooseApple * 10 + chooseOrange * 15 + chooseBanana * 7;
     chooseOrange--;
     document.querySelector('#total-input').innerHTML = + totalPrice;
+    document.querySelector("#haveMoney").innerHTML = -myMoney;
 }
 
 
@@ -66,7 +70,8 @@ function removeBanana() {
     fruitPrice.value = chooseBanana;
     totalPrice = chooseApple * 10 + chooseOrange * 15 + chooseBanana * 7;
     chooseBanana--;
-
+    document.querySelector("#haveMoney").innerHTML = -myMoney;
+    document.querySelector('#total-input').innerHTML = + totalPrice;
 }
 
 // function myPrice() {
